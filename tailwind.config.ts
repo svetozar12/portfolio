@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        list: "58.33333333%",
+        about: "41.66666667%",
+      },
       fontFamily: {
         sans: [
           "system-ui",

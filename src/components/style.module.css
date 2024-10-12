@@ -2,6 +2,11 @@
   padding: 20vh 10vw 20vh 0vw;
   height: 100vh;
   width: 58.33333333%;
+  transition: opacity 0.5s ease-in-out, max-width 0.5s ease-in-out;
+}
+
+.max-w-list {
+  max-width: 500px; /* Adjust based on your design */
 }
 
 @media (max-width: 1280px) {
