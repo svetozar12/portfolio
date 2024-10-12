@@ -9,10 +9,8 @@
   --color-gray-50: #fafafa;
   --color-gray-100: #f5f5f5;
   --color-gray-500: #a0aec0;
-  --color-gray-800: #2d3748;
+  --color-gray-800: rgba(0, 0, 0, 0.74);
   --color-black: #000000;
-  --color-pink-500: #ff007a;
-  --color-pink-600: #d70070;
 }
 
 body {
@@ -22,9 +20,13 @@ body {
 }
 
 a {
-  color: var(--color-pink-500);
+  color: var(--color-gray-800);
+  opacity: 0.8;
+  transition-duration: 100ms;
 }
 
 a:hover {
-  color: var(--color-pink-600);
+  color: var(--color-gray-800);
+  opacity: 0.5;
+  transition-duration: 100ms;
 }

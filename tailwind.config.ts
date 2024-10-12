@@ -9,7 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter", "Helvetica Neue", "Arial", "sans-serif"],
+        sans: [
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Droid Sans",
+          "Helvetica Neue",
+        ],
       },
       colors: {
         white: "var(--color-white)",

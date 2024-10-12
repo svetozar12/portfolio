@@ -1,0 +1,13 @@
+.container {
+  padding: 20vh 10vw 20vh 0vw;
+  height: 100vh;
+  width: 58.33333333%;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 10vh 10vh 0 10vh;
+    height: unset;
+    width: 100%;
+  }
+}
