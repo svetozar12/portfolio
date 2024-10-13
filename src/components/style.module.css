@@ -6,7 +6,7 @@
 }
 
 .max-w-list {
-  max-width: 500px; /* Adjust based on your design */
+  max-width: 500px;
 }
 
 @media (max-width: 1280px) {

@@ -34,18 +34,21 @@ const Overview: React.FC<IOverview> = ({ activeItem }) => {
   return (
     <>
       <div
-        className={`absolute -z-10 flex justify-center flex-col items-start order-1 flex-grow transition-all ease-in-out ${
-          showActiveItem
-            ? "sticky max-w-list top-0 z-0 opacity-100"
-            : "opacity-0"
-        } ${styles.container}`}
+        className={`${
+          styles.container
+        } absolute -z-10 flex justify-center flex-col items-start order-1 flex-grow transition-all ease-in-out
+      ${
+        showActiveItem ? "sticky max-w-list top-0 z-0 opacity-100" : "opacity-0"
+      }`}
       >
         {activeItem}
       </div>
+
       <div
-        className={`relative flex justify-center flex-col items-start order-1 flex-grow xl:sticky xl:top-0 xl:order-2 transition-all  ${
-          showActiveItem ? "max-w-0 opacity-0" : "opacity-100"
-        } ${styles.container}`}
+        className={`${
+          styles.container
+        } relative flex justify-center flex-col items-start order-1 flex-grow xl:sticky xl:top-0 xl:order-2 transition-all
+      ${showActiveItem ? "max-w-0 opacity-0" : "opacity-100"}`}
       >
         {name}
         <br />
