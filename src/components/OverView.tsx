@@ -11,15 +11,21 @@ const Overview: React.FC<IOverview> = ({ activeItem }) => {
   const isMobile = useIsMobile();
   const showActiveItem = !isMobile && activeItem;
 
-  const name = <h1 className="font-bold text-4xl">Svetozar Gospodinov,</h1>;
+  const name = (
+    <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+      Svetozar Gospodinov,
+    </h1>
+  );
+
   const subTitle = (
-    <span className="text-gray-200 text-3xl">
+    <span className="text-gray-200 text-lg sm:text-xl md:text-xl lg:text-2xl">
       freelance developer specializing in
     </span>
   );
+
   const accent = (
     <span
-      className="text-4xl font-bold"
+      className="font-bold text-xl sm:text-xl md:text-2xl lg:text-3xl"
       style={{
         backgroundImage: "linear-gradient(214deg, #ff285c, #b010fb)",
         backgroundClip: "text",
@@ -31,6 +37,7 @@ const Overview: React.FC<IOverview> = ({ activeItem }) => {
       GraphQL.
     </span>
   );
+
   return (
     <>
       <div
