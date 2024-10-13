@@ -11,9 +11,28 @@ const Overview: React.FC<IOverview> = ({ activeItem }) => {
   const isMobile = useIsMobile();
   const showActiveItem = !isMobile && activeItem;
 
+  const name = <h1 className="font-bold text-4xl">Svetozar Gospodinov,</h1>;
+  const subTitle = (
+    <span className="text-gray-200 text-3xl">
+      freelance developer specializing in
+    </span>
+  );
+  const accent = (
+    <span
+      className="text-4xl font-bold"
+      style={{
+        backgroundImage: "linear-gradient(214deg, #ff285c, #b010fb)",
+        backgroundClip: "text",
+        WebkitBackgroundClip: "text",
+        color: "transparent",
+      }}
+    >
+      {" "}
+      GraphQL.
+    </span>
+  );
   return (
     <>
-      {/* Active Item Section */}
       <div
         className={`absolute -z-10 flex justify-center flex-col items-start order-1 flex-grow transition-all ease-in-out ${
           showActiveItem
@@ -23,31 +42,16 @@ const Overview: React.FC<IOverview> = ({ activeItem }) => {
       >
         {activeItem}
       </div>
-
-      {/* Overview Info Section */}
       <div
         className={`relative flex justify-center flex-col items-start order-1 flex-grow xl:sticky xl:top-0 xl:order-2 transition-all  ${
           showActiveItem ? "max-w-0 opacity-0" : "opacity-100"
         } ${styles.container}`}
       >
-        <h1 className="font-bold text-4xl">Svetozar Gospodinov,</h1>
+        {name}
         <br />
         <div>
-          <span className="text-gray-200 text-3xl">
-            freelance developer specializing in
-          </span>
-          <span
-            className="text-4xl font-bold"
-            style={{
-              backgroundImage: "linear-gradient(214deg, #ff285c, #b010fb)",
-              backgroundClip: "text",
-              WebkitBackgroundClip: "text",
-              color: "transparent",
-            }}
-          >
-            {" "}
-            GraphQL.
-          </span>
+          {subTitle}
+          {accent}
         </div>
         <Links />
       </div>
