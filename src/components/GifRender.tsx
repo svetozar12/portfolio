@@ -17,8 +17,12 @@ const GifRender = ({ gifPath, title }: IGifRender) => {
         <div className="text-sm text-gray-600">{title}</div>
       </div>
 
-      <div className="p-3 bg-white">
-        <img src={gifPath} alt="My GIF" className="w-full rounded-md" />
+      <div className="bg-white">
+        <img
+          src={gifPath}
+          alt="My GIF"
+          className="w-full rounded-lg rounded-t-none"
+        />
       </div>
     </div>
   );
