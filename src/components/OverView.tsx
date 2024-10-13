@@ -30,10 +30,14 @@ const Overview: React.FC<IOverview> = ({ activeItem }) => {
           showActiveItem ? "max-w-0 opacity-0" : "opacity-100"
         } ${styles.container}`}
       >
-        <h1 className="font-bold text-2xl">
-          Svetozar Gospodinov,
-          <br /> freelance developer specializing in{" "}
+        <h1 className="font-bold text-4xl">Svetozar Gospodinov,</h1>
+        <br />
+        <div>
+          <span className="text-gray-200 text-3xl">
+            freelance developer specializing in
+          </span>
           <span
+            className="text-4xl font-bold"
             style={{
               backgroundImage: "linear-gradient(214deg, #ff285c, #b010fb)",
               backgroundClip: "text",
@@ -41,10 +45,10 @@ const Overview: React.FC<IOverview> = ({ activeItem }) => {
               color: "transparent",
             }}
           >
-            GraphQL
+            {" "}
+            GraphQL.
           </span>
-          .
-        </h1>
+        </div>
         <Links />
       </div>
     </>

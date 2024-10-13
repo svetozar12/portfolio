@@ -9,21 +9,18 @@ interface IProjectList {
 
 const ProjectList = ({ onInteraction }: IProjectList) => {
   const isMobile = useIsMobile();
-  const [projects, setProjects] = useState<
-    Array<{ name: string; year: number; item: React.JSX.Element }>
-  >([]);
 
-  useEffect(() => {
-    const temp = [];
-    for (let index = 0; index < 20; index++) {
-      temp.push({
-        name: "ECommerce",
-        year: 2024,
-        item: <GifRender title="ECommerce" gifPath="/gifs/e-com-backend.gif" />,
-      });
-    }
-    setProjects(temp);
-  }, []);
+  const projects: Array<{
+    name: string;
+    year: number;
+    item: React.JSX.Element;
+  }> = [
+    {
+      name: "ECOM GQL Backend",
+      year: 2024,
+      item: <GifRender title="ECommerce" gifPath="/gifs/e-com-backend.gif" />,
+    },
+  ];
 
   return (
     <>
@@ -44,8 +41,9 @@ const ProjectList = ({ onInteraction }: IProjectList) => {
               className="h-12"
               key={name + year + index}
             >
-              <div className="rounded-2xl flex justify-between items-center cursor-default w-full px-4 py-3 gap-8 hover:shadow-2xl hover:bg-white hover:scale-110 duration-500">
-                <div>{name}</div> <div className={styles.year}>{year}</div>
+              <div className="rounded-2xl flex justify-between items-center cursor-default w-full px-4 py-3 gap-8 hover:shadow-light hover:bg-gray-100 hover:scale-110 duration-500">
+                <div className="text-gray-200">{name}</div>
+                <div className={`${styles.year} text-gray-500`}>{year}</div>
               </div>
               <br></br>
             </div>

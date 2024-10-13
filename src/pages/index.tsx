@@ -8,7 +8,7 @@ export default function Home() {
   const [activeItem, setActiveItem] = useState<React.JSX.Element | null>(null);
   const isMobile = useIsMobile();
   return (
-    <div className="bg-gray-50 flex flex-wrap">
+    <div className="flex flex-wrap">
       <ProjectList
         onInteraction={(item) => {
           setActiveItem(item);
