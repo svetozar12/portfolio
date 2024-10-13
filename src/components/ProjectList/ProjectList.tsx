@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "./style.module.css";
 import useIsMobile from "../../hooks/useIsMobile";
+import GifRender from "../GifRender";
 
 interface IProjectList {
   onInteraction: (item: React.JSX.Element | null) => void;
@@ -15,7 +16,11 @@ const ProjectList = ({ onInteraction }: IProjectList) => {
   useEffect(() => {
     const temp = [];
     for (let index = 0; index < 20; index++) {
-      temp.push({ name: "ECommerce", year: 2024, item: <>hello + {index}</> });
+      temp.push({
+        name: "ECommerce",
+        year: 2024,
+        item: <GifRender title="ECommerce" gifPath="/gifs/e-com-backend.gif" />,
+      });
     }
     setProjects(temp);
   }, []);
@@ -35,7 +40,6 @@ const ProjectList = ({ onInteraction }: IProjectList) => {
 
           return (
             <div
-              // onClick={() => onInteraction(item)}
               {...interactionProps}
               className="h-12"
               key={name + year + index}
