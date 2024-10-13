@@ -16,7 +16,7 @@ const Modal = ({ open, onClose, children }: IModal) => {
         className="fixed inset-0  block backdrop-blur-[11px] w-screen h-screen"
       ></div>
       <button
-        className="absolute text-white top-10 right-10 text-2xl hover:text-gray-300 font-bold bg-black w-12 h-12 p-2 rounded-full"
+        className="absolute text-white top-5 right-5 text-2xl hover:text-gray-300 font-bold bg-black w-12 h-12 p-2 rounded-full"
         onClick={onClose}
       >
         &#x2715;
