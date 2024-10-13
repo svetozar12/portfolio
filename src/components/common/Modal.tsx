@@ -22,7 +22,7 @@ const Modal = ({ open, onClose, children }: IModal) => {
         &#x2715;
       </button>
       <div
-        className="relative bg-white rounded-lg shadow-lg w-full max-w-md p-6 z-10"
+        className="relative rounded-lg z-10"
         onClick={(e) => e.stopPropagation()}
       >
         {children}
