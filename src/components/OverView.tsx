@@ -20,7 +20,7 @@ const Overview: React.FC<IOverview> = ({ activeItem }) => {
 
   const subTitle = (
     <span className="text-gray-200 text-lg sm:text-xl md:text-xl lg:text-2xl">
-      freelance developer specializing in
+      developer specializing in
     </span>
   );
 
@@ -45,7 +45,7 @@ const Overview: React.FC<IOverview> = ({ activeItem }) => {
       >
         {name}
         <br />
-        <div>
+        <div className="flex justify-center items-center gap-5">
           {subTitle}
           <TypingEffect />
         </div>

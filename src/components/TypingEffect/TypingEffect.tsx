@@ -10,9 +10,9 @@ const TypingEffect = () => {
   const deletingSpeed = 70 - words[currentWordIndex].length; // larger is slower
 
   const gradients = [
-    "linear-gradient(135deg, #ff1e56, #ff073a 40%, #000000 100%)",
-    "linear-gradient(135deg, #00ff85, #00ff1e 40%, #001100 100%)",
-    "linear-gradient(214deg, #ff285c, #b010fb)",
+    "linear-gradient(135deg, #ff1e56, #ff073a 50%, #000000 100%)",
+    "linear-gradient(135deg, #00ff85, #00ff1e 60%, #001100 100%)",
+    "linear-gradient(135deg, #ff285c, #b010fb 80%, #001100 100%)",
   ];
   useEffect(() => {
     const handleTyping = () => {
@@ -26,10 +26,10 @@ const TypingEffect = () => {
       });
 
       if (!isDeleting && displayedText === currentWord) {
-        setTimeout(() => setIsDeleting(true), 1000); // Pause before deleting
+        setTimeout(() => setIsDeleting(true), 1000);
       } else if (isDeleting && displayedText === "") {
         setIsDeleting(false);
-        setCurrentWordIndex((prev) => (prev + 1) % words.length); // Move to next word
+        setCurrentWordIndex((prev) => (prev + 1) % words.length);
       }
     };
 
