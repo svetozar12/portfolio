@@ -2,6 +2,7 @@ import React from "react";
 import Links from "./Links";
 import styles from "./style.module.css";
 import useIsMobile from "../hooks/useIsMobile";
+import TypingEffect from "@/components/TypingEffect/TypingEffect";
 
 interface IOverview {
   activeItem: JSX.Element | null;
@@ -20,21 +21,6 @@ const Overview: React.FC<IOverview> = ({ activeItem }) => {
   const subTitle = (
     <span className="text-gray-200 text-lg sm:text-xl md:text-xl lg:text-2xl">
       freelance developer specializing in
-    </span>
-  );
-
-  const accent = (
-    <span
-      className="font-bold text-xl sm:text-xl md:text-2xl lg:text-3xl"
-      style={{
-        backgroundImage: "linear-gradient(214deg, #ff285c, #b010fb)",
-        backgroundClip: "text",
-        WebkitBackgroundClip: "text",
-        color: "transparent",
-      }}
-    >
-      {" "}
-      GraphQL.
     </span>
   );
 
@@ -61,7 +47,7 @@ const Overview: React.FC<IOverview> = ({ activeItem }) => {
         <br />
         <div>
           {subTitle}
-          {accent}
+          <TypingEffect />
         </div>
         <Links />
       </div>

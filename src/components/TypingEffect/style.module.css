@@ -1,0 +1,20 @@
+.typing-container {
+    font-family: 'Courier', monospace;
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.blinking-cursor {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 2px;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
