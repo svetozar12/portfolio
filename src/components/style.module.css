@@ -9,10 +9,20 @@
   max-width: 500px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1281px) {
   .container {
     padding: 10vh 10vh 0 10vh;
     height: unset;
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    height: unset;
+    width: 100%;
+    padding: 3vh 3vh 0 3vh;
   }
 }

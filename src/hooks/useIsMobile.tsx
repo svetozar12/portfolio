@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-const xlBreakpoint = 1280;
+const xlBreakpoint = 1281;
 
 /**
- * Custom hook to detect if the screen width is below the Tailwind's xl breakpoint (1280px).
+ * Custom hook to detect if the screen width is below the Tailwind's xl breakpoint (1281px).
  *
- * @returns {boolean} Returns true if the screen width is below 1280px, otherwise false.
+ * @returns {boolean} Returns true if the screen width is below 1281px, otherwise false.
  *
  * @example
  * // Example of using the `useIsMobile` hook inside a component

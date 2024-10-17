@@ -10,7 +10,7 @@ const Links = () => {
   return (
     <div className="flex gap-4 mt-4">
       {links.map(({ name, url }) => (
-        <a className="text-lg" target="_blank" key={name + url} href={url}>
+        <a className="text-xl" target="_blank" key={name + url} href={url}>
           {name}
         </a>
       ))}

@@ -13,13 +13,11 @@ const Overview: React.FC<IOverview> = ({ activeItem }) => {
   const showActiveItem = !isMobile && activeItem;
 
   const name = (
-    <h1 className="font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl">
-      Svetozar Gospodinov,
-    </h1>
+    <h1 className="font-bold text-3xl lg:text-4xl">Svetozar Gospodinov,</h1>
   );
 
   const subTitle = (
-    <span className="text-gray-200 text-lg sm:text-xl md:text-xl lg:text-2xl">
+    <span className="text-gray-200 text-xl lg:text-2xl">
       developer specializing in
     </span>
   );
@@ -45,7 +43,7 @@ const Overview: React.FC<IOverview> = ({ activeItem }) => {
       >
         {name}
         <br />
-        <div className="flex justify-center items-center gap-5">
+        <div className="flex xl:justify-center xl:items-center xl:gap-5 flex-col xl:flex-row">
           {subTitle}
           <TypingEffect />
         </div>
