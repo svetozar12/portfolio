@@ -21,7 +21,6 @@ export default function Document() {
         />
         <meta property="og:url" content="https://gospodinovs.com" />
         <meta property="og:type" content="website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <body className="antialiased">
         <Main />
