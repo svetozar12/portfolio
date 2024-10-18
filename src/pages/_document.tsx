@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="en" title="Svetozar Gospodinov">
       <Head>
+        <title>Svetozar Gospodinov</title>
         <meta name="description" content="Svetozar Gospodinov Portfolio." />
         <meta
           name="keywords"
