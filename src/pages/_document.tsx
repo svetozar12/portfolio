@@ -21,6 +21,7 @@ export default function Document() {
         />
         <meta property="og:url" content="https://gospodinovs.com" />
         <meta property="og:type" content="website" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
       <body className="antialiased">
         <Main />
