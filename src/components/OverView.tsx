@@ -42,7 +42,7 @@ const Overview: React.FC<IOverview> = ({ activeItem }) => {
       ${showActiveItem ? "max-w-0 opacity-0" : "opacity-100"}`}
       >
         {name}
-        <br />
+        {!isMobile && <br />}
         <div className="flex xl:justify-center xl:items-center xl:gap-5 flex-col xl:flex-row">
           {subTitle}
           <TypingEffect />
