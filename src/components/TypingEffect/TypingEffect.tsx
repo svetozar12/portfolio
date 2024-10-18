@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./style.module.css";
 
 const TypingEffect = () => {
-  const words = ["Graphql", "Freelancing", "Web Development"];
+  const words = ["Graphql .", "Freelancing .", "Web Development ."];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);

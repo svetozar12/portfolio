@@ -1,0 +1,112 @@
+/* pages/404.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffffff;
+  text-align: center;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.macbookContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.macbook {
+  width: 400px;
+  height: 250px;
+  background-color: #333;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  position: relative;
+}
+
+.screen {
+  width: 85%;
+  height: 60%;
+  background-color: #000;
+  margin: 20px auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.errorCode {
+  font-size: 4rem;
+  color: #00ffff; /* Glowing blue */
+  animation: glow 1.5s infinite;
+}
+
+@keyframes glow {
+  0%,
+  100% {
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  }
+  50% {
+    text-shadow: 0 0 30px #00ffff, 0 0 40px #00ffff;
+  }
+}
+
+.errorMessage {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+.keyboard {
+  width: 80%;
+  height: 15%;
+  background-color: #444;
+  margin: 10px auto;
+  border-radius: 3px;
+}
+
+.touchpad {
+  width: 35%;
+  height: 8%;
+  background-color: #444;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin: 20px 0;
+  color: #bbb;
+}
+
+.homeButton {
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 112, 243, 0.5); /* Subtle glow */
+}
+
+.homeButton:hover {
+  background-color: #005bb5;
+}
+
+@media (max-width: 600px) {
+  .macbook {
+    width: 300px;
+    height: 180px;
+  }
+
+  .errorCode {
+    font-size: 2.5rem;
+  }
+}
